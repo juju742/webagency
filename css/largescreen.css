@@ -1,0 +1,1126 @@
+﻿/* alternate font-sizing */
+
+.lg-smaller 
+{
+	font-size: .7143em; /* equiv 10px */
+	line-height: 2.1em;
+}
+
+.lg-small
+{
+	font-size: .8571em; /* equiv 12px */
+	line-height: 1.75em;
+}
+
+.lg-big 
+{
+	font-size: 1.1429em; /* equiv 16px */
+	line-height: 1.3125em;
+}
+
+.lg-bigger
+{
+	font-size: 1.2857em; /* equiv 18px */
+	line-height: 1.1667em;
+}
+
+.lg-biggest 
+{
+	font-size: 1.4286em; /* equiv 20px */
+	line-height: 1.05em;
+}
+
+
+/*********************** POSITION************************/
+
+/*
+    Flex Containers
+
+    Des boîtes flexibles, également appelées conteneurs flex, sont créées en définissant la propriété d'affichage sur un élément conteneur. 
+    Les propriétés sont énumérées ici dans un ordre spécifique avec les syntaxes de brouillon de travail d'abord et la recommandation 
+    actuelle du candidat syntaxe standard en dernier.
+*/
+
+.lg-display-flex
+{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.lg-display-inline-flex
+{
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+/*
+
+Orientation et orientation de l'axe principal
+
+Ces propriétés spécifient comment les éléments sont placés dans le conteneur,
+en définissant l'orientation et la direction de l'axe principal du conteneur
+
+*/
+
+.lg-flex-direction-column
+{
+    -webkit-box-orient: block-axis;
+    -webkit-box-direction: normal;
+    -moz-box-orient: block-axis;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+}
+
+
+.lg-flex-direction-column-reverse
+{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -moz-box-orient:horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse; 
+}
+
+.lg-flex-direction-row 
+{
+    -webkit-box-orient: inline-axis;
+    -webkit-box-direction:normal;
+    -moz-box-orient:inline-axis;
+    -moz-box-direction:normal;
+    -ms-flex-direction:row;
+    -webkit-flex-direction:row;
+    flex-direction:row; 
+}
+
+.lg-flex-direction-row-reverse 
+{
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:reverse;
+    -moz-box-orient:vertical;
+    -moz-box-direction:reverse;
+    -ms-flex-direction:row-reverse;
+    -webkit-flex-direction:row-reverse;
+    flex-direction:row-reverse; 
+}
+
+/*
+   Direction à un ou plusieurs lignes et à l'axe transversal
+
+    Ces propriétés contrôlent si le conteneur flexible est simple ou multi-lignes, et la direction de l'axe transversal, 
+    qui détermine la direction dans laquelle de nouvelles lignes sont empilées.
+*/
+
+.lg-flex-wap
+{    
+    -webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
+    -ms-flex-wrap:wrap;
+    -webkit-flex-wrap:wrap; /* Safari 6.1+ */
+    flex-wrap:wrap;
+}
+
+.lg-flex-no-wap
+{    
+   -webkit-box-lines:single;
+   -moz-box-lines:single;
+   -ms-flex-wrap:none;
+   -webkit-flex-wrap:nowrap; /* Safari 6.1+ */
+   flex-wrap:nowrap;
+}
+
+.lg-flex-wrap-reverse
+{    
+   -webkit-box-lines:multiple;
+   -moz-box-lines:multiple;
+   -ms-flex-wrap:wrap-reverse;
+   -webkit-flex-wrap:wrap-reverse; /* Safari 6.1+ */
+   flex-wrap:wrap-reverse;
+}
+
+
+/*
+    Alignement de l'axe principal et répartition de l'espace supplémentaire
+
+    Ces propriétés alignent les éléments flexibles le long de l'axe principal de la ligne courante du conteneur flex. 
+    Cela se fait après toutes les longueurs flexibles et toutes les marges automatiques ont été résolues.
+*/
+
+
+.lg-flex-justify-center
+{
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center ;
+}
+
+.lg-flex-end 
+{    
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    -ms-flex-pack:end;
+    -webkit-justify-content:flex-end;
+    justify-content:flex-start;
+}
+
+.lg-flex-start
+{    
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -ms-flex-pack:start;
+    -webkit-justify-content:flex-start;
+    justify-content:flex-start;
+}
+
+.lg-flex-justify-space-around
+{
+    justify-content: space-around;
+}
+
+
+.lg-flex-justify-space-between
+{
+    justify-content: space-between;
+}
+
+/*
+    Alignement transversal de l'axe
+
+    Les éléments flexibles peuvent être alignés dans l'axe transversal de la ligne courante du conteneur flexible, similaire à la section précédente,
+    mais dans la direction perpendiculaire. Ces propriétés sont appliquées au conteneur flexible.
+*/
+
+
+.lg-align-items-baseline
+{
+    -webkit-box-align: baseline;
+    -moz-box-align: baseline;
+    -ms-flex-align: baseline;
+    -webkit-align-items: baseline;
+    align-items:  baseline;
+}
+
+
+.lg-align-items-center
+{
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items:center;
+    align-items: center;
+}
+
+.lg-align-items-end
+{
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end; 
+}
+
+.lg-align-items-start
+{
+    -webkit-box-align: start; 
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items:flex-start;
+    align-items: flex-start;
+}
+
+
+.lg-align-items-stretch
+{
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+
+/*
+    Styling float
+*/
+
+.lg-clear-both
+{
+    clear:both;
+}
+
+/*
+    padding top 
+*/
+
+.lg-padding-top-0
+{
+    padding-top:0;
+}
+
+.lg-padding-top-10
+{
+    padding-top:10%;
+}
+
+.lg-padding-top-20
+{
+    padding-top:20%;
+}
+
+.lg-padding-left-30
+{
+    padding-top:30%;
+}
+
+.lg-padding-top-40
+{
+    padding-top:40%;
+}
+
+.lg-padding-top-50
+{
+    padding-top:50%;
+}
+
+.lg-padding-top-60
+{
+    padding-left:60%;
+}
+
+.lg-padding-top-70
+{
+    padding-top:70%;
+}
+
+.lg-padding-top-80
+{
+    padding-left:80%;
+}
+
+.lg-padding-top-90 
+{
+    padding-top: 90%;
+}
+
+.lg-padding-top 
+{
+    padding-left: 100%;
+}
+
+
+/*
+    padding right 
+*/
+
+.lg-padding-right-0
+{
+    padding-right:0;
+}
+
+.lg-padding-right-10
+{
+    padding-right:10%;
+}
+
+.lg-padding-right-20
+{
+    padding-right:20%;
+}
+
+.lg-padding-right-30
+{
+    padding-right:30%;
+}
+
+.lg-padding-right-40
+{
+    padding-right:40%;
+}
+
+.lg-padding-right-50
+{
+    padding-right:50%;
+}
+
+.lg-padding-right-60
+{
+    padding-right:60%;
+}
+
+.lg-padding-right-70
+{
+    padding-right:70%;
+}
+
+.lg-padding-right-80
+{
+    padding-right:80%;
+}
+
+.lg-padding-right-90 
+{
+    padding-right: 90%;
+}
+
+.lg-padding-right 
+{
+    padding-right: 100%;
+}
+
+/*
+    padding bottom 
+*/
+
+.lg-padding-bottom-0
+{
+    padding-bottom:0;
+}
+
+.lg-padding-bottom-10
+{
+    padding-bottom:10%;
+}
+
+.lg-padding-bottom-20
+{
+    padding-bottom:20%;
+}
+
+.lg-padding-bottom-30
+{
+    padding-bottom:30%;
+}
+
+.lg-padding-bottom-40
+{
+    padding-bottom:40%;
+}
+
+.lg-padding-bottom-50
+{
+    padding-bottom:50%;
+}
+
+.lg-padding-bottom-60
+{
+    padding-bottom:60%;
+}
+
+.lg-padding-bottom-70
+{
+    padding-bottom:70%;
+}
+
+.lg-padding-bottom-80
+{
+    padding-bottom:80%;
+}
+
+.lg-padding-bottom-90 
+{
+    padding-bottom: 90%;
+}
+
+.lg-padding-bottom 
+{
+    padding-bottom : 100%;
+}
+
+/*
+    padding left 
+*/
+
+.lg-padding-left-0
+{
+    padding-left:0;
+}
+
+.lg-padding-left-10
+{
+    padding-left:10%;
+}
+
+.lg-padding-left-20
+{
+    padding-left:20%;
+}
+
+.lg-padding-left-30
+{
+    padding-left:30%;
+}
+
+.lg-padding-left-40
+{
+    padding-left:40%;
+}
+
+.lg-padding-left-50
+{
+    padding-left:50%;
+}
+
+.lg-padding-left-60
+{
+    padding-left:60%;
+}
+
+.lg-padding-left-70
+{
+    padding-left:70%;
+}
+
+.lg-padding-left-80
+{
+    padding-left:80%;
+}
+
+.lg-padding-left-90 
+{
+    padding-left: 90%;
+}
+
+.lg-padding-left 
+{
+    padding-left: 100%;
+}
+
+/*
+    margin top 
+*/
+
+.lg-margin-top-0
+{
+    margin-top:0;
+}
+
+.lg-margin-top-10
+{
+    margin-top:10%;
+}
+
+.lg-margin-top-20
+{
+    margin-top:20%;
+}
+
+.lg-margin-top-30
+{
+    margin-top:30%;
+}
+
+.lg-margin-top-40
+{
+    margin-top:40%;
+}
+
+.lg-margin-top-50
+{
+    margin-top:50%;
+}
+
+.lg-margin-top-60
+{
+    margin-top:60%;
+}
+
+.lg-margin-top-70
+{
+    margin-top:70%;
+}
+
+.lg-margin-top-80
+{
+    margin-top:80%;
+}
+
+.lg-margin-top-90 
+{
+    margin-top: 90%;
+}
+
+.lg-margin-top 
+{
+    margin-top: 100%;
+}
+
+
+/*
+    margin right 
+*/
+
+.lg-margin-right-0
+{
+    margin-right:0;
+}
+
+.lg-margin-right-10
+{
+    margin-right:10%;
+}
+
+.lg-margin-right-20
+{
+    margin-right:20%;
+}
+
+.lg-margin-right-30
+{
+    margin-right:30%;
+}
+
+.lg-margin-right-40
+{
+    margin-right:40%;
+}
+
+.lg-margin-right-50
+{
+    margin-right:50%;
+}
+
+.lg-margin-right-60
+{
+    margin-right:60%;
+}
+
+.lg-margin-right-70
+{
+    margin-right:70%;
+}
+
+.lg-margin-right-80
+{
+    margin-right:80%;
+}
+
+.lg-margin-right-90 
+{
+    margin-right: 90%;
+}
+
+.lg-margin-right 
+{
+    margin-right: 100%;
+}
+
+/*
+    padding bottom 
+*/
+
+.lg-margin-bottom-0
+{
+    margin-bottom:0;
+}
+
+.lg-margin-bottom-10
+{
+    margin-bottom:10%;
+}
+
+.lg-margin-bottom-20
+{
+    margin-bottom:20%;
+}
+
+.lg-margin-bottom-30
+{
+    margin-bottom:30%;
+}
+
+.lg-margin-bottom-40
+{
+    margin-bottom:40%;
+}
+
+.lg-margin-bottom-50
+{
+   margin-bottom:50%;
+}
+
+.lg-margin-bottom-60
+{
+    margin-bottom:60%;
+}
+
+.lg-margin-bottom-70
+{
+    margin-bottom:70%;
+}
+
+.lg-margin-bottom-80
+{
+    margin-bottom:80%;
+}
+
+.lg-margin-bottom-90 
+{
+    margin-bottom: 90%;
+}
+
+.lg-margin-bottom 
+{
+    margin-bottom : 100%;
+}
+
+/*
+    margin left 
+*/
+
+.lg-margin-left-0
+{
+    margin-left:0;
+}
+
+.lg-margin-left-10
+{
+    margin-left:10%;
+}
+
+.lg-margin-left-20
+{
+    margin-left:20%;
+}
+
+.lg-margin-left-30
+{
+    margin-left:30%;
+}
+
+.lg-margin-left-40
+{
+    margin-left:40%;
+}
+
+.lg-margin-left-50
+{
+    margin-left:50%;
+}
+
+.lg-margin-left-60
+{
+    margin-left:60%;
+}
+
+.lg-margin-left-70
+{
+    margin-left:70%;
+}
+
+.lg-margin-left-80
+{
+    margin-left:80%;
+}
+
+.lg-margin-left-90 
+{
+    margin-left: 90%;
+}
+
+.lg-margin-left 
+{
+    margin-left: 100%;
+}
+
+
+
+/*
+************* block 
+*/
+
+
+/*
+    column height
+*/
+
+
+.lg-column-10
+{   
+    height:10%;   
+    margin:0;    
+}
+
+.lg-column-20
+{    
+    height:20%;    
+    margin:0;    
+}
+
+.lg-column-30
+{    
+    height:30%;  
+    margin:0;    
+}
+
+.lg-column-40
+{    
+    height:40%;    
+    margin:0;
+        
+}
+
+.lg-column-50
+{    
+    height:50%;    
+    margin:0;
+        
+}
+
+.lg-column-60
+{
+    height:60%;    
+    margin:0;       
+}
+
+.lg-column-70
+{    
+    height:70%;
+    margin:0;        
+}
+
+.lg-column-80
+{    
+    height:80%;    
+    margin:0;    
+}
+
+.lg-column-90
+{    
+    height:90%;
+    margin:0;    
+}
+
+.lg-column
+{    
+    height:100%;
+    min-height:100%;    
+}
+
+/*
+    row lenght
+*/
+
+.lg-row-10
+{
+    width:10%;
+    max-width:10%;
+    min-width:10%; 
+    margin:0;    
+}
+
+.lg-row-20
+{
+    width:20%; 
+    max-width:20%;
+    min-width:20%;     
+    margin:0;    
+}
+
+.lg-row-30
+{
+    width:30%;
+    max-width:30%;
+    min-width:30%;
+    margin:0;    
+}
+
+.lg-row-40
+{
+    width:40%;
+    max-width:40%;
+    min-width:40%;
+    margin:0;        
+}
+
+
+.lg-row-50
+{
+    width:50%;    
+    max-width:50%;
+    min-width:50%;
+}
+
+.lg-row-60
+{
+    width:60%;    
+    max-width:60%;
+    min-width:60%;
+    margin:0;
+        
+}
+
+.lg-row-70
+{
+    width:70%;    
+    max-width:70%;
+    min-width:70%;
+    margin:0;
+        
+}
+
+.lg-row-80
+{
+    width:80%;
+    max-width:80%;
+    min-width:80%;
+    margin:0;    
+}
+
+.lg-row-90
+{
+   width:90%;   
+   max-width:90%;
+   min-width:90%;
+}
+
+.lg-row
+{
+   width:100%;
+   max-width:100%;
+   min-width:100%;
+}
+
+
+
+/*********************** THEME **************************/
+
+#accueil
+{
+    margin-top: 120px;
+}
+
+#contener
+{
+    width:1280px;
+    min-width:1280px;
+    max-width:1600px;    
+    padding:0;
+    position: relative;
+    margin:auto;  
+}
+
+
+/*
+    CSS zones en tête du site
+*/
+
+#navigation
+{
+    position:fixed;
+    background-color:white;
+    top:0px;  
+    z-index: 10; 
+    padding-bottom:20px;
+    height:100px;
+    width:1280px;
+    min-width:1280px;
+    max-width:1600px;
+}
+
+
+.logo img
+{
+    padding:10px;
+    height:57px;
+    width:261px;    
+}
+
+    
+nav
+{    
+    order:1;
+    flex-direction:row-reverse;
+    font-weight:bold;
+    max-width:60%;
+}
+
+
+
+.mySlides-display-left 
+{   
+    position:absolute;
+    top:200px;
+    left:1px;    
+    -webkit-transform:translate(0%, -50%);
+    -moz-transform:translate(0%, -50%);
+	-ms-transform:translate(0%, -50%);
+    -o-transform:translate(0%, -50%);
+    transform: translate(0%, -50%);
+    border-bottom-right-radius: 45px;
+    border-top-right-radius: 45px;    
+}
+
+.mySlides-display-right 
+{      
+        
+    position:absolute;
+    top:200px;
+    left:1259px;        
+    -webkit-transform:translate(0%, -50%);
+	-moz-transform:translate(0%, -50%);
+	-ms-transform:translate(0%, -50%);
+    -o-transform:translate(0%, -50%);
+    transform:translate(0%, -50%);
+    border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px;
+}
+
+
+
+
+.btn-slide 
+{  
+  font-weight: bold;
+  border: 1px solid #3866A3;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #7CACDE;
+  padding: 10px 18px;
+  background: #3491B2;
+  margin-top:10px;
+}
+
+.branding-slide
+{
+    position:relative;    
+    left: 20%;    
+    top: -300px;
+}
+
+
+/*
+    CSS zones Services
+*/
+
+#service
+{       
+    padding-bottom:5%;
+    height:auto;
+    width:100%; 
+    margin:auto;
+    max-width:1600px;
+}
+
+.title-window-branding
+{       
+   margin: 100px auto 0 auto; 
+   text-align:center;    
+}
+
+
+.article-branding
+{
+    padding-top:10%;
+}
+
+
+.ico-article
+{
+    margin-top:40px;
+}
+
+.content-article
+{
+    padding-top:20px;
+    padding-left:20px;
+}
+
+.window-branding
+{       
+   margin: 10px auto 0 auto;
+   text-align:center;        
+}
+
+
+.img-window-branding 
+{
+    padding-top: 15%;
+    padding-left: 35%;
+}
+
+
+.main-feature
+{
+    height:319px;
+    width:510px;
+}
+
+/*
+    CSS zones en Projet
+*/
+
+#project
+{    
+    height:auto;    
+    flex-wrap:wrap;    
+    padding-bottom:5%;
+    width:100%;
+    max-width:1600px;
+}
+
+
+
+.portfolio
+{       
+    display:flex;  
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;		
+}
+
+.portfolio li
+{     
+    height: auto; 
+    width: 20%;
+    margin: 10px;   	
+}
+
+.portefolio-text
+{
+    top: 27px;    
+    width: 100%;   
+    width: 100%;
+    height: 71px; 
+    position: relative;     
+    color:white;
+}
+
+/*
+    CSS zones Contact
+*/
+
+#contact
+{       
+    background-image:url(../img/card-contact.png);    
+    background-repeat:no-repeat;
+    width:84%;
+    height:550px;
+    max-width:85%;
+    min-width:85%;
+    margin:auto;    
+    max-width:1600px;
+}
+
+.contact-card
+{
+    float:right;
+    background-color:#fff;
+    opacity:0.8;
+    margin-top:20px;
+    margin-right:20%;
+    width:300px;
+    height:auto;
+    padding:10px;
+}
+
